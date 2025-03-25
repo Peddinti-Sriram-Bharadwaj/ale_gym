@@ -62,6 +62,43 @@ The `interfacing.py` script provides a minimal example of interacting with an At
 
 The `.rl_ale` directory (which is ignored by Git) is intended to be used for any temporary files, logs, or data generated during the execution of your reinforcement learning experiments.
 
+## TD Blackjack
+
+This project implements a text-based version of the classic card game Blackjack, referred to here as "TD Blackjack".  It allows a single player to play against a dealer, following standard Blackjack rules.
+
+**Key Features:**
+
+*   **Standard Blackjack Rules:** The game adheres to the core rules of Blackjack, including hitting, standing, doubling down (when applicable), and dealer hitting on soft 17.
+*   **Text-Based Interface:** The game is played entirely through the command line, providing a simple and accessible interface.
+*   **Card Representation:** Cards are represented using standard suits (Hearts, Diamonds, Clubs, Spades) and ranks (Ace, 2-10, Jack, Queen, King).
+*   **Dealer Logic:** The dealer's actions are automated according to standard Blackjack strategy.
+* **Betting:** The player starts with a set amount of money, and can bet on each hand.
+* **Win/Lose/Push:** The game correctly determines if the player wins, loses, or pushes (ties) against the dealer.
+
+**How to Play:**
+
+1.  Run the `blackjack.py` script.
+2.  The game will prompt you to place a bet.
+3.  You will be dealt two cards, and the dealer will be dealt one face-up card and one face-down card.
+4.  You will be prompted to "hit" or "stand".
+5.  If you choose to "hit", you will be dealt another card.
+6.  If you choose to "stand", the dealer will reveal their face-down card and play their hand.
+7. The game will determine the winner.
+8. The game will continue until the player runs out of money, or quits.
+
+**Files:**
+
+*   `blackjack.py`: Contains the main game logic.
+* `cards.py`: Contains the card and deck logic.
+
+**Future Enhancements:**
+
+*   **Multiple Players:** Expand the game to support multiple human players.
+*   **Splitting:** Implement the ability to split pairs.
+*   **Insurance:** Add the option for insurance bets.
+* **GUI:** Create a graphical user interface.
+
+
 ## License
 
 [Add your license here, e.g., MIT License]
